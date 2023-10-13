@@ -96,7 +96,7 @@ input::placeholder {
   padding: 0 0.938em;
 }
 
-.flex-wrap {
+.flexwrap {
   display: flex;
   flex-wrap: wrap;
 }
