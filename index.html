@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="./Style/base.css" />
     <link rel="stylesheet" href="./Style/style_header.css" />
     <link rel="stylesheet" href="./Style/style_main.css" />
-    <link rel="stylesheet" href="./Style/">
+    <link rel="stylesheet" href="./Style/style_footer.css" />
+
     <!-- Icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    `
 
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
@@ -30,12 +32,29 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
-    <title>Document</title>
+    <title>Shoe-Store</title>
   </head>
   <body>
-    <div id="page" class="site">
+    <div id="page" class="site showmenu">
+      <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+          <div class="canvas-head flexitem">
+            <div class="logo">
+              <a href="/"><span class="circle"></span>.Store</a>
+            </div>
+            <a href="#" class="t-close flexcenter"
+              ><i class="ri-close-line"></i
+            ></a>
+          </div>
+          <div class="departments"></div>
+          <nav></nav>
+          <div class="thetop-nav"></div>
+        </div>
+      </aside>
+
       <header>
-        <div class="header-top">
+        <!-- header-top -->
+        <div class="header-top mobile-hide">
           <div class="container">
             <div class="wrapper flexitem">
               <div class="left">
@@ -46,38 +65,1398 @@
                 </ul>
               </div>
               <div class="right">
-                <ul class="flexitem">
-                  <li class="main-links">
+                <ul class="flexitem main-links">
+                  <li>
                     <a href="#">Sign Up</a>
                   </li>
-                  <li class="main-links">
+                  <li>
                     <a href="#">My Account</a>
                   </li>
-                  <li class="main-links">
+                  <li>
                     <a href="#">Order Tracking</a>
                   </li>
-                  <li class="main-links">
+                  <li class="has-child">
                     <a href="#"
                       >USD
                       <span class="icon-small"
                         ><i class="ri-arrow-down-s-line"></i></span
                     ></a>
+                    <ul>
+                      <li><a href="">USD</a></li>
+                      <li><a href="">EURO</a></li>
+                      <li><a href="">GBP</a></li>
+                      <li><a href="">IDR</a></li>
+                    </ul>
                   </li>
-                  <li class="main-links">
+                  <li class="has-child">
                     <a href="#"
                       >ENGLISH
                       <span class="icon-small"
                         ><i class="ri-arrow-down-s-line"></i></span
                     ></a>
+                    <ul>
+                      <li><a href="">ENGLISH</a></li>
+                      <li><a href="">GERMAN</a></li>
+                      <li><a href="">SPANISH</a></li>
+                      <li><a href="">BAHASA</a></li>
+                    </ul>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- !header-top -->
+
+        <div class="header-nav">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <a href="" class="trigger desktop-hide"
+                ><span><i class="ri-menu-2-line"></i></span
+              ></a>
+              <div class="left flexitem">
+                <div class="logo">
+                  <a href="/"><span class="circle"></span>.Store</a>
+                </div>
+                <nav class="mobile-hide">
+                  <ul class="flexitem secondlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li class="has-child">
+                      <a href="#"
+                        >Women
+                        <div class="icon-small">
+                          <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                      </a>
+                      <div class="mega">
+                        <div class="container">
+                          <div class="wrapper">
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Women's Style</h4>
+                                <ul>
+                                  <li><a href="#">youthful</a></li>
+                                  <li><a href="#">elegant</a></li>
+                                  <li><a hr ef="#">high fashioned</a></li>
+                                  <li><a href="#">lady</a></li>
+                                  <li><a href="#">Noble</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Size</h4>
+                                <ul>
+                                  <li><a href="#">All Sizes</a></li>
+                                  <li><a href="#">Sizes 35-40</a></li>
+                                  <li><a href="#">Sizes Above 40</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Product Categories</h4>
+                                <ul>
+                                  <li><a href="#">Sneakers</a></li>
+                                  <li><a href="#">Athletic Shoes</a></li>
+                                  <li><a href="#">Flats</a></li>
+                                  <li><a href="#">Office Shoes</a></li>
+                                  <li><a href="#">Sandals</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Top brands</h4>
+                                <ul class="women-brands">
+                                  <li><a href="#">Nike</a></li>
+                                  <li><a href="#">Converse</a></li>
+                                  <li><a href="#">Adidas</a></li>
+                                  <li><a href="#">Vans</a></li>
+                                  <li><a href="#">New Balance</a></li>
+                                  <li><a href="#">MLB</a></li>
+                                  <li><a href="#">Puma</a></li>
+                                  <li><a href="#">Reebok</a></li>
+                                </ul>
+                                <a href="#" class="view-all"
+                                  >View all brands
+                                  <i class="ri-arrow-right-line"></i
+                                ></a>
+                              </div>
+                            </div>
+                            <div class="flexcol products">
+                              <div class="row">
+                                <div class="media">
+                                  <div class="thumbnail object-cover">
+                                    <a href="#">
+                                      <img src="header-img/Mau-2.jpg" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="text-content">
+                                  <h4>Most wanted!</h4>
+                                  <a href="" class="primary-button"
+                                    >order now</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Men</a></li>
+                    <li>
+                      <a href="#"
+                        >Child
+                        <div class="fly-item"><span>New!</span></div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="right">
+                <ul class="flexitem second-links">
+                  <li class="mobile-hide">
+                    <a href="#">
+                      <div class="icon-large">
+                        <i class="ri-heart-line"></i>
+                      </div>
+                      <div class="fly-item">
+                        <span class="item-number">0</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="icon-large">
+                        <i class="ri-shopping-cart-line"></i>
+                        <div class="fly-item">
+                          <span class="item-number">0</span>
+                        </div>
+                      </div>
+                      <div class="icon-text">
+                        <div class="mini-text">Total</div>
+                        <div class="cart-total">8.00$</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main mobile-hide">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <div class="dpt-cat">
+                  <div class="dpt-head">
+                    <div class="main-text">All Departments</div>
+                    <div class="mini-text mobile-hide">Total 2000 Products</div>
+                    <a href="#" class="dpt-trigger mobile-hide">
+                      <i class="ri-menu-3-line ri-xl"></i>
+                    </a>
+                  </div>
+                  <div class="dpt-menu">
+                    <ul class="second-links">
+                      <li class="has-child Athletic">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Athletic Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Salomone Men's
+                              XA Pro 3D V8 GTX Trail Running Shoes Ebony /
+                              Caramel Cafe / Black</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nike Air
+                              Jordan 3 Retro Fire Red</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Adidas
+                              RUNFALCON 3.0 SHOES</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Goya Training
+                              Plus 2023</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Flyknit Racer
+                              rainbow</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Running">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Running Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>running adidas
+                              Duramo 10 nam GW8336</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>running adidas
+                              Alphabounce EK GY5401</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nike Zoom Fly
+                              5 – Racer Blue/High Voltage/Sundial –
+                              DM8968-402</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              HOVR Sonic 6</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>adidas Men's
+                              Running Shoes</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Soccer">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Soccer Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Zocker
+                              Pioneer</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Zocker 1902
+                              Lake</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>NIKE ZOOM
+                              MERCURIAL VAPOR 15 PRO TF - DJ5605-146</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Zocker Inspire
+                              PRO</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Viralto II
+                              TF</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Basketball">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Basketball Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nike Kd Trey 5
+                              X Ep</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Mizuno
+                              Monarcida Neo II Select AS - P1GD210509</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              Tribase Reign 5</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Unisex Under
+                              Armour Curry Splash 3</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nike Air
+                              Jordan Xxxvii Low Pf</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Jogging">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Jogging Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>UNISEX
+                              GEL-ROCKET 11</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              Infinite 5</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              Flow Velociti Se</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              Flow TR</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nam Under
+                              Armour Hovr Phantom 3</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Walking">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Walking Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Sneaker Goya
+                              GY232</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Columbia
+                              TRAILSTORM™ WATERPROOF</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Adidas ZG23
+                              GOLF SHOES</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Nike E-Series
+                              1.0</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Under Armour
+                              FLOW Velociti Wind 2</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child shoes-list High-Heels">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          High Heels
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Super High
+                              Heels Platform Colourful Sandals</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Denovas Womens
+                              Patent Very High Heel Big Size Knee Show Boot</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Giày Saint
+                              Laurent Opyum Pumps Patent Leather Black Heel
+                              4720110NPVV1000 -37</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Brillant High
+                              Heels</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>Ecco Shape
+                              Stiletto 45</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                      <li class="has-child Loafers">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Loafers
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>BELGIAN
+                              LOAFER</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>BROGUE
+                              SLIPPER</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#">
+                              <i class="ri-arrow-right-line"></i>PENNY LOAFER</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#">
+                              <i class="ri-arrow-right-line"></i>DOUBLE BUCKLE
+                              LOAFER</a
+                            >
+                          </li>
+                          <br />
+                          <li>
+                            <a href="#"
+                              ><i class="ri-arrow-right-line"></i>HORSEBIT
+                              LOAFER</a
+                            >
+                          </li>
+                          <br />
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="search-box">
+                  <form action="" class="search">
+                    <span class="icon-large"
+                      ><i class="ri-search-line"></i
+                    ></span>
+                    <input type="search" placeholder="Search for Products" />
+                    <button type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
-      <!-- header -->
       <main>
+        <div class="trending">
+          <div class="container">
+            <div class="wrapper">
+              <div class="sectop flexitem">
+                <h2>
+                  <span class="circle"></span>
+                  <span>Trending Products</span>
+                </h2>
+              </div>
+              <div class="column">
+                <div class="flexwrap">
+                  <div class="row products big">
+                    <div class="item">
+                      <div class="offer">
+                        <p>Offer end ats</p>
+                        <ul class="flexcenter">
+                          <li>1</li>
+                          <li>15</li>
+                          <li>27</li>
+                          <li>60</li>
+                        </ul>
+                      </div>
+                      <div class="media">
+                        <div class="image">
+                          <a href="#">
+                            <img src="./assets/products/air7.png" alt="img" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>31%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(1508)</span>
+                        </div>
+                        <h3 class="main-links">
+                          <a href="#">Best Seller Product</a>
+                        </h3>
+                        <div class="price">
+                          <span class="current">$199.99</span>
+                          <span class="normal mini-text">$399.98</span>
+                        </div>
+                        <div class="stock mini-text">
+                          <div class="qty">
+                            <span
+                              >Stock:
+                              <strong class="qty-available">807</strong></span
+                            >
+                            <span
+                              >Sold:
+                              <strong class="qty-sold">1459</strong></span
+                            >
+                          </div>
+                          <div class="bar">
+                            <div class="available"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- products1 -->
+                  <div class="row products mini">
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img src="./assets/products/air2.jpeg" alt="img" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>32%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Nike Air Jordan 1 White</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(548)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$129.99</span>
+                          <span class="normal mini-text">$189.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2520 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img src="./assets/products/air3.jpg" alt="img" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>32%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Nike Air Jordan 1 Retro</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(394)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$139.99</span>
+                          <span class="normal mini-text">$199.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2432 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img src="./assets/products/air4.webp" alt="img" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>32%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Nike Air Jordan 1 Mid</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(635)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$115.99</span>
+                          <span class="normal mini-text">$201.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2106 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img src="./assets/products/air5.jpg" alt="img" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>32%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Nike Air Jordan 4 Fire Like</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(350)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$189.99</span>
+                          <span class="normal mini-text">$259.99</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>1862 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- products2 -->
+                  <div class="row products mini">
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img
+                              src="./assets/products/converse1.webp"
+                              alt="img"
+                            />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>34%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Converse Chuck Taylor All Star</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(630)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$89.99</span>
+                          <span class="normal mini-text">$159.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2486 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img
+                              src="./assets/products/converse2.webp"
+                              alt="img"
+                            />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>34%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Converse Looney Tunes </a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(243)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$99.99</span>
+                          <span class="normal mini-text">$139.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2975 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img
+                              src="./assets/products/converse3.webp"
+                              alt="img"
+                            />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>34%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Converse Chuck Taylor High</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(208)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$99.99</span>
+                          <span class="normal mini-text">$139.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>3054 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="#">
+                            <img
+                              src="./assets/products/converse4.jpg"
+                              alt="img"
+                            />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href="#"><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="discount circle flexcenter">
+                          <span>34%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="">Converse Chuck Taylor Low </a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(328)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current">$99.99</span>
+                          <span class="normal mini-text">$129.98</span>
+                        </div>
+                        <div class="mini-text">
+                          <p>2923 Sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- products3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- trending products -->
+
+        <div class="features">
+          <div class="container">
+            <div class="wrapper">
+              <div class="column">
+                <div class="sectop flexitem">
+                  <h2>
+                    <span class="circle"></span>
+                    <span>Featured Products</span>
+                  </h2>
+                  <div class="second-links">
+                    <a href="#" class="view-all"
+                      >View All<i class="ri-arrow-right-line"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="products main flexwrap">
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/air1.webp" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/air7.png" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe3.jpg" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe1-2.jpg" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe5.jpg" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe7.png" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe11.webp" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Polyester, Cotton</li>
+                          <li>Pull On closure</li>
+                          <li>Fashion Personality</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="#">
+                          <img src="./assets/products/shoe9.webp" alt="img" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active">
+                            <a href="#"><i class="ri-heart-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-eye-line"></i></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="ri-shuffle-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount circle flexcenter">
+                        <span>25%</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1508)</span>
+                      </div>
+                      <h3 class="main-links">
+                        <a href="#">Best Seller Product</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current">$199.99</span>
+                        <span class="normal mini-text">$399.98</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- main -->
+      <footer></footer>
+      <!-- footer -->
+    </div>
 
         <div class="silder">
           <div class="container">
