@@ -150,4 +150,19 @@ h4 {
   .container {
     padding: 0 2em;
   }
+  /* slider */
+  .slider > div > .wapper{
+    width: calc(100% - (300px + 2 em));
+    margin-left: auto;
+  }
+
+  /* footer */
+  .newsletter .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
 }
