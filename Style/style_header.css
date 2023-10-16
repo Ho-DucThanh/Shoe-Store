@@ -822,19 +822,22 @@ form.search button:hover{
   width: var(--percent100);
 }
 
-.offf-canvas .thetop-nav .right > ul > :wehre(:nth-child(4), li:nth-child(5)) > a{
+.off-canvas .thetop-nav .right > ul > :wehre(:nth-child(4), li:nth-child(5)) > a{
   display: none;
 }
 
-.offf-canvas .thetop-nav .right ul ul{
+.off-canvas .thetop-nav .right ul ul{
   display: flex;
   flex-direction: row;
 }
 
-.offf-canvas .thetop-nav .right ul ul li a{
+.off-canvas .thetop-nav .right ul ul li a{
   padding: 0.5 em;
   border: 1px solid var(--border-color);
   line-height: 16px;
   margin: 0 0.5em 0.5em 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
