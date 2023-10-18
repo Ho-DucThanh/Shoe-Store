@@ -188,8 +188,28 @@ html {
 
 @media screen and (max-width: 992px) {
   /* main */
+  /* trending */
+
+  .trending .flexwrap {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là toàn bộ màn hình */
+  }
+
+  .products.mini.mini1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .products.mini.mini1 .item {
+    flex: 0 0 50%;
+  }
   .products.mini.mini2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
   .products.mini.mini2 .item {
@@ -203,6 +223,10 @@ html {
 
   .products.main .item {
     flex: 0 0 50%;
+  }
+
+  .banner .row {
+    flex: 0 0 100%;
   }
 
   /* footer */

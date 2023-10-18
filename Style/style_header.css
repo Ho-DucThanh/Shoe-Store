@@ -268,7 +268,7 @@ nav .fly-item,
 .dpt-cat .dpt-head {
   position: relative;
   width: 300px;
-  margin-top: -3px;
+  margin-top: -2px;
   padding: 0.75em 1.5em;
   background-color: var(--primary-color);
   border-radius: 7px 7px 0 0;
@@ -737,7 +737,7 @@ form.search button:hover {
   visibility: visible;
   opacity: 1;
 }
-.mini-cart .products img {
+:is(.mini-cart .products, .products.cart, .checkout .products) .thumbnail img {
   transform: none;
 }
 .mini-cart ul :where(li, .price) {
@@ -763,7 +763,7 @@ form.search button:hover {
   max-height: 450px;
   overflow: auto;
 }
-.mini-cart .thumbnail {
+:where(.mini-cart, .products.cart, .checkout) .thumbnail {
   position: relative;
   width: 80px;
   height: 80px;

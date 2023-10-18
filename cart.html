@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Base, Style CSS -->
+    <link rel="stylesheet" href="./Style/style_header.css" />
+    <link rel="stylesheet" href="./Style/style_main.css" />
+    <link rel="stylesheet" href="./Style/style_footer.css" />
+    <link rel="stylesheet" href="./Style/base.css" />
+    <link rel="stylesheet" href="./Style/style_cart.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    `
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- silder -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <title>View Cart</title>
+  </head>
+  <body>
+    <div id="page" class="site page-single">
+      <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+          <div class="canvas-head flexitem">
+            <div class="logo">
+              <a href="/"><span class="circle"></span>.Store</a>
+            </div>
+            <a href="#" class="t-close flexcenter"
+              ><i class="ri-close-line"></i
+            ></a>
+          </div>
+          <div class="departments"></div>
+          <nav></nav>
+          <div class="thetop-nav"></div>
+        </div>
+      </aside>
+
+      <header>
+        <!-- header-top -->
+        <div class="header-top mobile-hide">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <ul class="flexitem main-links">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Featured Products</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <ul class="flexitem main-links">
+                  <li>
+                    <a href="#">Sign Up</a>
+                  </li>
+                  <li>
+                    <a href="#">My Account</a>
+                  </li>
+                  <li>
+                    <a href="#">Order Tracking</a>
+                  </li>
+                  <li class="has-child">
+                    <a href="#"
+                      >USD
+                      <span class="icon-small"
+                        ><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <ul>
+                      <li class="current"><a href="#">USD</a></li>
+                      <li><a href="#">EURO</a></li>
+                      <li><a href="#">GBP</a></li>
+                      <li><a href="#">VND</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-child">
+                    <a href="#"
+                      >ENGLISH
+                      <span class="icon-small"
+                        ><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <ul>
+                      <li class="current"><a href="#">English</a></li>
+                      <li><a href="#">Vietnamese</a></li>
+                      <li><a href="#">Spanish</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- !header-top -->
+
+        <!-- header-nav -->
+        <div class="header-nav">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <a href="#" class="trigger desktop-hide"
+                ><span><i class="ri-menu-2-line"></i></span
+              ></a>
+              <div class="left flexitem">
+                <div class="logo">
+                  <a href="/"><span class="circle"></span>.Store</a>
+                </div>
+                <nav class="mobile-hide">
+                  <ul class="flexitem secondlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li class="has-child">
+                      <a href="#"
+                        >Trademark
+                        <div class="icon-small">
+                          <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                      </a>
+                      <div class="mega">
+                        <div class="container">
+                          <div class="wrapper">
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Sports Brands</h4>
+                                <ul>
+                                  <li><a href="#">Nike</a></li>
+                                  <li><a href="#">Adidas</a></li>
+                                  <li><a hr ef="#">Puma</a></li>
+                                  <li><a href="#">New Balance</a></li>
+                                  <li><a href="#">Skechers</a></li>
+                                  <li><a href="#">Reebok</a></li>
+                                  <li><a href="#">Asic</a></li>
+                                  <li><a href="#">Under Armour</a></li>
+                                  <li><a href="#">Vans</a></li>
+                                  <li><a href="#">ON RUNNING</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Luxury Brand</h4>
+                                <ul>
+                                  <li><a href="#">Christian Louboutin</a></li>
+                                  <li><a href="#">Jimmy Choo</a></li>
+                                  <li><a href="#">Louis Vuitton</a></li>
+                                  <li><a href="#">Dolce & Gabbana</a></li>
+                                  <li><a href="#">Prada</a></li>
+                                  <li><a href="#">Valentino</a></li>
+                                  <li><a href="#">Salvatore Ferragamo</a></li>
+                                  <li><a href="#">Fendi</a></li>
+                                  <li><a href="#">Hermès</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Product Categories</h4>
+                                <ul>
+                                  <li><a href="#">Sports Shoes</a></li>
+                                  <li><a href="#">Athletic Shoes</a></li>
+                                  <li><a href="#">Fashion Shoes</a></li>
+                                  <li><a href="#">Office Shoes</a></li>
+                                  <li><a href="#">Industrial Shoes</a></li>
+                                  <li><a href="#">Children's Shoes</a></li>
+                                  <li>
+                                    <a href="#">Specialized Sports Footwear</a>
+                                  </li>
+                                  <li><a href="#">Seasonal Footwear</a></li>
+                                  <li>
+                                    <a href="#">Travel and Hiking Boots</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">High-End Fashion Footwear</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="flexcol">
+                              <div class="row">
+                                <h4>Top brands</h4>
+                                <ul class="women-brands">
+                                  <li><a href="#">Nike</a></li>
+                                  <li><a href="#">Converse</a></li>
+                                  <li><a href="#">Adidas</a></li>
+                                  <li><a href="#">Vans</a></li>
+                                  <li><a href="#">NB550</a></li>
+                                  <li><a href="#">MLB</a></li>
+                                  <li><a href="#">Puma</a></li>
+                                  <li><a href="#">Reebok</a></li>
+                                  <li><a href="#">Gucci</a></li>
+                                  <li><a href="#">Balenciaga</a></li>
+                                  <li><a href="#">Asics</a></li>
+                                  <li><a href="#">Under Armour</a></li>
+                                </ul>
+                                <a href="#" class="view-all"
+                                  >View all brands
+                                  <i class="ri-arrow-right-line"></i
+                                ></a>
+                              </div>
+                            </div>
+                            <div class="flexcol products">
+                              <div class="row">
+                                <div class="media">
+                                  <div class="thumbnail object-cover">
+                                    <a href="#">
+                                      <img
+                                        src="./assets/Shoe/shoe4.jpg"
+                                        alt=""
+                                      />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="text-content">
+                                  <h4>Most wanted!</h4>
+                                  <a href="#" class="primary-button"
+                                    >Order Now</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Community</a></li>
+                    <li>
+                      <a href="#"
+                        >Sports
+                        <div class="fly-item"><span>New!</span></div>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="right">
+                <ul class="flexitem second-links">
+                  <li class="mobile-hide">
+                    <a href="#">
+                      <div class="icon-large">
+                        <i class="ri-heart-line"></i>
+                      </div>
+                      <div class="fly-item">
+                        <span class="item-number">0</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="iscart">
+                    <a href="#">
+                      <div class="icon-large">
+                        <i class="ri-shopping-cart-line"></i>
+                        <div class="fly-item">
+                          <span class="item-number">5</span>
+                        </div>
+                      </div>
+                      <div class="icon-text">
+                        <div class="mini-text">Total</div>
+                        <div class="cart-total">0.00$</div>
+                      </div>
+                    </a>
+                    <div class="mini-cart">
+                      <div class="content">
+                        <div class="cart-head">5 items in cart</div>
+                        <div class="cart-body">
+                          <ul class="products mini">
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/air5.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Nike Air Jordan 4 Fire Like</a>
+                                </p>
+                                <span class="price">
+                                  <span>$189.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/air7.png" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Air Jordan 4 "White Oreo"</a>
+                                </p>
+                                <span class="price">
+                                  <span>$199.99</span>
+                                  <span class="fly-item"><span>1x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/shoe9.webp" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Nike Air Jordan 'Pink Oxford' & 'Celestine
+                                    Blue'</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$189.99</span>
+                                  <span class="fly-item"><span>1x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/shoe3.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#"
+                                    >Nike Air Force 1 Shadow Multi-Color</a
+                                  >
+                                </p>
+                                <span class="price">
+                                  <span>$169.99</span>
+                                  <span class="fly-item"><span>1x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="cart-footer">
+                          <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p><strong>$939.95</strong></p>
+                          </div>
+                          <div class="actions">
+                            <a href="./checkout.html" class="primary-button"
+                              >Checkout</a
+                            >
+                            <a href="#" class="secondary-button">View Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main mobile-hide">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <div class="dpt-cat">
+                  <div class="dpt-head">
+                    <div class="main-text">All Departments</div>
+                    <div class="mini-text mobile-hide">Total 1000 Products</div>
+                    <a href="#" class="dpt-trigger mobile-hide">
+                      <i class="ri-menu-3-line ri-xl"></i>
+                      <i class="ri-close-line ri-xl"></i>
+                    </a>
+                  </div>
+                  <div class="dpt-menu">
+                    <ul class="second-links">
+                      <li class="has-child Athletic">
+                        <a href="#">
+                          <div class="icon-large">
+                            <i class="ri-run-line"></i>
+                          </div>
+                          Athletic Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">Reebok</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Puma</a></li>
+                          <li><a href="#">Hoka One One</a></li>
+                          <li><a href="#">Salomon</a></li>
+                          <li><a href="#">Brooks</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-child Running">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-walk-line"></i>
+                          </div>
+                          Running Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">New Balance</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Topo Athletic</a></li>
+                          <li><a href="#">Hoka One One</a></li>
+                          <li><a href="#">Salomon</a></li>
+                          <li><a href="#">On Running</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-child Soccer">
+                        <a href="#">
+                          <div class="icon-large">
+                            <i class="ri-football-line"></i>
+                          </div>
+                          Soccer Shoes
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <ul>
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">Puma</a></li>
+                          <li><a href="#">Mizuno</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Diadora</a></li>
+                          <li><a href="#">Umbro</a></li>
+                          <li><a href="#">Kelme</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-basketball-fill"></i>
+                          </div>
+                          Basketball Shoes
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="#">
+                          <div class="icon-large">
+                            <i class="ri-walk-line"></i>
+                          </div>
+                          Jogging Shoes
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="#">
+                          <div class="icon-large">
+                            <i class="ri-walk-line"></i>
+                          </div>
+                          Walking Shoes
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="#">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          High Heels
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-bear-smile-line"></i>
+                          </div>
+                          Loafers
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-user-smile-fill"></i>
+                          </div>
+                          Children's Shoes
+                        </a>
+                      </li>
+                      <li class="has-child season">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-shining-line"></i>
+                          </div>
+                          Seasonal Footwear
+                          <div class="icon-small">
+                            <i class="ri-arrow-right-s-line"></i>
+                          </div>
+                        </a>
+                        <div class="mega">
+                          <div class="flexcol">
+                            <div class="row">
+                              <h4><a href="#"></a>Autumn & Winter</h4>
+                              <ul>
+                                <li><a href="#">Winter Boots</a></li>
+                                <li><a href="#">Sheepskin Boots</a></li>
+                                <li><a href="#">Insulated Leather Boots</a></li>
+                                <li><a href="#">Knee-High Boots</a></li>
+                                <li>
+                                  <a href="#">Waterproof Leather Boots</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <h4><a href="#"></a>Spring & Summer</h4>
+                              <ul>
+                                <li><a href="#">Sandal</a></li>
+                                <li><a href="#">Flip-Flops</a></li>
+                                <li><a href="#">Breathable Sneakers</a></li>
+                                <li><a href="#">Espadrilles</a></li>
+                                <li>
+                                  <a href="#">Summer Athletic Shoes</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-bear-smile-line"></i>
+                          </div>
+                          Specialized Sports Footwear
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="search-box">
+                  <form action="" class="search">
+                    <span class="icon-large"
+                      ><i class="ri-search-line"></i
+                    ></span>
+                    <input type="search" placeholder="Search for Products" />
+                    <button type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main>
+        <div class="single-cart">
+          <div class="container">
+            <div class="wrapper">
+              <div class="breadcrumb">
+                <ul class="flexitem">
+                  <li><a href="#">Home</a></li>
+                  <li>Cart</li>
+                </ul>
+              </div>
+              <div class="page-title">
+                <h1>Shopping Cart</h1>
+              </div>
+              <div class="products one cart">
+                <div class="flexwrap">
+                  <form action="" class="form-cart">
+                    <div class="item">
+                      <table id="cart-table">
+                        <thead>
+                          <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="flexitem">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="./assets/products/air5.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="content">
+                                <strong
+                                  ><a href="#"
+                                    >Nike Air Jordan 4 Fire Like</a
+                                  ></strong
+                                >
+                                <p>Color: Red & White</p>
+                              </div>
+                            </td>
+                            <td>$189.99</td>
+                            <td>
+                              <div class="qty-control flexitem">
+                                <button class="minus">-</button>
+                                <input type="text" value="2" min="1" />
+                                <button class="plus">+</button>
+                              </div>
+                            </td>
+                            <td>$379.98</td>
+                            <td>
+                              <a href="#" class="item-remove"
+                                ><i class="ri-close-line"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="flexitem">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="./assets/products/air7.png" alt=""
+                                /></a>
+                              </div>
+                              <div class="content">
+                                <strong
+                                  ><a href="#"
+                                    >Air Jordan 4 "White Oreo"</a
+                                  ></strong
+                                >
+                                <p>Color: Black & White</p>
+                              </div>
+                            </td>
+                            <td>$199.99</td>
+                            <td>
+                              <div class="qty-control flexitem">
+                                <button class="minus">-</button>
+                                <input type="text" value="1" min="1" />
+                                <button class="plus">+</button>
+                              </div>
+                            </td>
+                            <td>$199.99</td>
+                            <td>
+                              <a href="#" class="item-remove"
+                                ><i class="ri-close-line"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="flexitem">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img
+                                    src="./assets/products/shoe9.webp"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="content">
+                                <strong
+                                  ><a href="#"
+                                    >Nike Air Jordan 'Pink Oxford' & 'Celestine
+                                    Blue'</a
+                                  ></strong
+                                >
+                                <p>Color: Pink & Black-White</p>
+                              </div>
+                            </td>
+                            <td>$189.99</td>
+                            <td>
+                              <div class="qty-control flexitem">
+                                <button class="minus">-</button>
+                                <input type="text" value="1" min="1" />
+                                <button class="plus">+</button>
+                              </div>
+                            </td>
+                            <td>$189.99</td>
+                            <td>
+                              <a href="#" class="item-remove"
+                                ><i class="ri-close-line"></i
+                              ></a>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td class="flexitem">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img
+                                    src="./assets/products/shoe3.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="content">
+                                <strong
+                                  ><a href="#"
+                                    >Nike Air Force 1 Shadow Multi-Color</a
+                                  ></strong
+                                >
+                                <p>Color: Red & White</p>
+                              </div>
+                            </td>
+                            <td>$169.99</td>
+                            <td>
+                              <div class="qty-control flexitem">
+                                <button class="minus">-</button>
+                                <input type="text" value="1" min="1" />
+                                <button class="plus">+</button>
+                              </div>
+                            </td>
+                            <td>$169.99</td>
+                            <td>
+                              <a href="#" class="item-remove"
+                                ><i class="ri-close-line"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </form>
+
+                  <div class="cart-summary styled">
+                    <div class="item">
+                      <div class="coupon">
+                        <input type="text" placeholder="Enter coupon" />
+                        <button>Apply</button>
+                      </div>
+                      <div class="shipping-rate collapse">
+                        <div class="has-child expand">
+                          <a href="#" class="icon-small"
+                            >Estimate Shipping and Tax</a
+                          >
+                          <div class="content">
+                            <div class="countries">
+                              <form action="">
+                                <select name="country" id="country">
+                                  <option value="1" selected="selected">
+                                    Ho Chi Minh City
+                                  </option>
+                                  <option value="2">Ha Noi City</option>
+                                  <option value="3">Hai Phong City</option>
+                                  <option value="4">Can Tho City</option>
+                                  <option value="5">Da Nang City</option>
+                                </select>
+                              </form>
+                            </div>
+
+                            <div class="states">
+                              <form action="">
+                                <label for="state">States</label>
+                                <select name="state" id="state">
+                                  <option value="1">Ho Chi Minh City</option>
+                                  <option value="2" selected="selected">
+                                    Ha Noi City
+                                  </option>
+                                  <option value="3">Hai Phong City</option>
+                                  <option value="4">Can Tho City</option>
+                                  <option value="5">Da Nang City</option>
+                                </select>
+                              </form>
+                            </div>
+                            <div class="postal-code">
+                              <form action="">
+                                <label for="postal">Zip / Postal Code</label>
+                                <input
+                                  type="number"
+                                  name="postal"
+                                  id="postal"
+                                />
+                              </form>
+                            </div>
+                            <div class="rate-options variant">
+                              <form action="">
+                                <p>
+                                  <span>Flat: $10.00</span>
+                                  <input
+                                    type="radio"
+                                    name="rate-option"
+                                    id="rate-option"
+                                    checked
+                                  />
+                                  <label
+                                    for="rate-option"
+                                    class="circle"
+                                  ></label>
+                                </p>
+                                <p>
+                                  <span>Best: $0.00</span>
+                                  <input
+                                    type="radio"
+                                    name="best"
+                                    id="best"
+                                    checked
+                                  />
+                                  <label for="best" class="circle"></label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-total">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <th>Subtotal</th>
+                              <td>$939.95</td>
+                            </tr>
+                            <tr>
+                              <th>Discount</th>
+                              <td>$100.00</td>
+                            </tr>
+
+                            <tr>
+                              <th>
+                                Shipping <span class="mini-text">(Flat)</span>
+                              </th>
+                              <td>$10.00</td>
+                            </tr>
+                            <tr class="grand-total">
+                              <th>TOTAL</th>
+                              <td><strong>$849.95</strong></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <a href="./checkout.html" class="secondary-button"
+                          >Checkout</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="newsletter">
+          <div class="container">
+            <div class="wapper">
+              <div class="box">
+                <div class="content">
+                  <h3>Join Our Newsletter</h3>
+                  <p>
+                    Get E-mail updates about our latest shop and
+                    <strong>special offers</strong>
+                  </p>
+                </div>
+                <form action="" class="search">
+                  <span class="icon-large"><i class="ri-mail-line"></i></span>
+                  <input
+                    type="mail"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="widgets">
+          <div class="container">
+            <div class="wrapper">
+              <div class="flexwrap">
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Help & Contact</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Your Account</a></li>
+                      <li><a href="#">Your Orders</a></li>
+                      <li><a href="#">Shipping Rates</a></li>
+                      <li><a href="#">Returns</a></li>
+                      <li><a href="#">Assistant</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Product Categories</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Nike</a></li>
+                      <li><a href="#">Adidas</a></li>
+                      <li><a href="#">Puma</a></li>
+                      <li><a href="#">Converse</a></li>
+                      <li><a href="#">Balenciaga</a></li>
+                      <li><a href="#">Vans</a></li>
+                      <li><a href="#">Off-White</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Payment Info</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Bussiness Card</a></li>
+                      <li><a href="#">Shop with Points</a></li>
+                      <li><a href="#">Reload Your Balance</a></li>
+                      <li><a href="#">Paypal</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>About Us</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Company Infor</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Investors</a></li>
+                      <li><a href="#">Carerrs</a></li>
+                      <li><a href="#">Policies</a></li>
+                      <li><a href="#">Customer reviews</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Widgets -->
+        <div class="footer-infor">
+          <div class="container">
+            <div class="wrapper">
+              <div class="flexcol">
+                <div class="logo">
+                  <a href=""><span class="circle"></span>.Store</a>
+                </div>
+                <div class="socials">
+                  <ul class="flexitem">
+                    <li>
+                      <a href="#"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-facebook-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-linkedin-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-youtube-line"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mini-text">
+                Copyright © 2023 .Store. All right reserved
+              </p>
+            </div>
+          </div>
+          <div class="top-page">
+            <a href="#page"><i class="ri-arrow-up-line"></i></a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <div class="menu-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <ul class="flexitem">
+                <li>
+                  <a href="#">
+                    <i class="ri-bar-chart-line"></i>
+                    <span>Trending</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ri-user-6-line"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ri-heart-line"></i>
+                    <span>Wishlist</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class="t-search">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span>Car</span>
+                    <div class="fly-item">
+                      <span class="item-number">0</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- menu bottom -->
+      <div class="search-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <form action="" class="search">
+              <a href="#" class="t-close search-close flexcenter"
+                ><i class="ri-close-line"></i
+              ></a>
+              <span class="icon-large"><i class="ri-search-line"></i></span>
+              <input type="search" placeholder="Your email address" required />
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- search bottom -->
+      <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

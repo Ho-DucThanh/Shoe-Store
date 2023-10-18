@@ -51,3 +51,10 @@ function toggle(e) {
   if (this.closest(".has-child").classList != "expand");
   this.closest(".has-child").classList.toggle("expand");
 }
+
+// show dpt menu
+const dptButton = document.querySelector(".dpt-cat .dpt-trigger"),
+  dptClass = document.querySelector(".site");
+dptButton.addEventListener("click", function () {
+  dptClass.classList.toggle("showdpt");
+});
